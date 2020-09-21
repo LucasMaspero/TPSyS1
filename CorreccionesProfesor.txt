@@ -1,0 +1,4 @@
+Entrega 1:
+
+Si están en estado 1, reconociendo un error, un espacio actúa de centinela, no permanece en el mismo estado.
+Ojo, no todos los aceptores implican ungetc, por ejemplo # no necesita ungetc
