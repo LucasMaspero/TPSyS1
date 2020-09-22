@@ -7,6 +7,13 @@ int cantErrores = 0;
 
 TOKEN c;
 
+/*
+* Integrantes:
+*   Lucas Maspero               (Legajo 161542-7)
+*   Franco Nicolás Magne Colque (Legajo 168756-6)
+*   Natalia Gutiérrez           (Legajo 156549-7)
+*/
+
 int main()
 {
     do
