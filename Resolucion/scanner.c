@@ -37,7 +37,7 @@ int obtenerNuevoEstado(char caracter)
   {
     return tabla_de_transicion[estado_actual][CARACTER_DIGITO];
   }
-  else if(isspace(caracter)) 
+  else if(isspace(caracter)) // isspace reconoce tanto espacios, tabulador y nuevas lineas.
   {
     return tabla_de_transicion[estado_actual][CARACTER_ESPACIO];
   }
@@ -89,9 +89,10 @@ TOKEN scanner()
 	{
  		caracter_actual = getchar(); // Leer Caracter
     estado_actual = obtenerNuevoEstado(caracter_actual); // Transicionar de Estado
-	} while (!esEstadoAceptor(estado_actual));
+	} while (!esEstadoAceptor(estado_actual)); // Mientras no sea Estado Aceptor
 
-  reiniciar();
+  int token = aceptarToken(estado_actual); // Aceptar Token
+  reiniciar(); // Reiniciar Scanner
 
-	return aceptarToken(estado_actual); // Aceptar y Devolver Token
+	return token; // Devolver Token
 }

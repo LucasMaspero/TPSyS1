@@ -11,6 +11,6 @@ Primer Trabajo Practico Sintaxis y Semantica de los Lenguajes - Año 2020
 * Descargar Archivos: "**git clone https://github.com/LucasMaspero/TPSyS1.git**"
 
 ## Ejecucion
-* 1) Ubicarse en carpeta Resolucion: "**cd Resolucion**"
-* 2) Compilar: "**gcc -g -Wall -std=c11 -pedantic-errors main.c scanner.c scanner.h -o tp1**"
-* 3) Ejecutar: "**tp1 < ../DatosDePrueba/pruebaOriginal.txt**"
+1) Ubicarse en carpeta Resolucion: "**cd Resolucion**"
+2) Compilar: "**gcc -g -Wall -std=c11 -pedantic-errors main.c scanner.c scanner.h -o tp1**"
+3) Ejecutar: "**tp1 < ../DatosDePrueba/pruebaOriginal.txt**"
